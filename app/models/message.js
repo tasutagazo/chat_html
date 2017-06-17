@@ -4,9 +4,8 @@ var Schema = mongoose.Schema;
 var messageSchema = new Schema({
 	content: String,
 	createdAt: Date,
-	belongTo: {
-		type: mongoose.Schema.Types.ObjectId,
-		ref: 'User'
+	userId: {
+		type: String
 	}
 });
 
